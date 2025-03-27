@@ -75,7 +75,7 @@ jobs:
           #output-results-sarif: veracode-results.sarif
           #source-base-path-1: "^com/veracode:src/main/java/com/veracode"
           #source-base-path-2: "^WEB-INF:src/main/webapp/WEB-INF"
-          output-results-sarif: veracode-results.sarif
+          output-results-sarif: results.sarif
           repo_owner: OWNER
           repo_name: REPO
           #commitSHA: 4b6472266afd7b471e86085a6659e8c7f2b119da
