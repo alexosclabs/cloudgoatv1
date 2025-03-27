@@ -70,7 +70,7 @@ jobs:
         id: convert
         uses: Veracode/veracode-pipeline-scan-results-to-sarif@v1.0.7
         with:
-          results-json: results.json
+          pipeline-results-json: results.json
           #results-json: filtered_results.json
           #output-results-sarif: veracode-results.sarif
           #source-base-path-1: "^com/veracode:src/main/java/com/veracode"
