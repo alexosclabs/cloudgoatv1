@@ -77,5 +77,4 @@ jobs:
           repo_owner: OWNER
           repo_name: REPO
           commitSHA: 4b6472266afd7b471e86085a6659e8c7f2b119da
-          ref: refs/heads/master
-          githubToken: *****
+          ref: refs/heads/master     
