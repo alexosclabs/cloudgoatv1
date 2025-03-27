@@ -57,14 +57,16 @@ jobs:
         path: results.json
    
   results_to_sarif:
-    needs: pipeline_scan
+    needs: pipeline-scan
     runs-on: ubuntu-latest
     name: import pipeline results to sarif
     steps:
+    
       - name: Get scan results
         uses: actions/download-artifact@v3
         with:
           name: "Veracode Pipeline-Scan Results"
+          
       - name: Convert pipeline scan output to SARIF format
         id: convert
         uses: Veracode/veracode-pipeline-scan-results-to-sarif@v1.0.7
